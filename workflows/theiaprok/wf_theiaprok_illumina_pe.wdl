@@ -852,6 +852,8 @@ workflow theiaprok_illumina_pe {
     File? filtered_contigs_metrics = digger_denovo.filtered_contigs_metrics
     String? assembler = digger_denovo.assembler_used
     String? assembler_version = digger_denovo.assembler_version
+    File? pilon_changes = digger_denovo.pilon.changes
+    File? pilon_vcf = digger_denovo.pilon.vcf
     # Assembly QC - quast outputs
     File? quast_report = quast.quast_report
     String? quast_version = quast.version
